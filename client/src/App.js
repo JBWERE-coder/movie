@@ -1,8 +1,6 @@
-// Import necessary components from react-router-dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// Import your components
 import MovieList from './components/MovieList/MovieList';
+import MovieCard from './components/MovieList/MovieCard';
 
 
 function App() {
@@ -10,6 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MovieList />} />
+        <Route path="/" element={<MovieCard />} />
         
       </Routes>
     </Router>
